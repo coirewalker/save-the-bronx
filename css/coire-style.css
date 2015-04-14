@@ -76,7 +76,7 @@ article {
 	background-color: rgba(000, 000, 000, .3);
 }
 
-.about_top {
+.top {
 	margin-top: 60px;
 	padding-top: 0px
 }
@@ -88,7 +88,7 @@ article {
 p {
 	margin: 0px;
 	padding: 10px 0px 15px 0px;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
 }
@@ -96,7 +96,7 @@ p {
 h2 {
 	margin: 0px;
 	padding: 20px 20px 0px 0px;
-	font-size: 2em;
+	font-size: 1.6em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
 }
