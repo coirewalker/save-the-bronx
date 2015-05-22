@@ -2,37 +2,47 @@
 <html>
 	<head>
 		<title>// Save The Bronx Home //</title>
-		<link rel="stylesheet" href="css/tony-style.css">
-		<link rel="stylesheet" href="css/luis-style.css">
-		<link rel="stylesheet" href="../css/coire-style.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<script type="text/javascript" src="../js/jquery-2.3.1.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+ 		<script src="../js/gmaps.min.js"></script>
+
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,300italic|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div id="background">
-			<img src="../img/typewriter.jpg">
+			<img class="bg-img" src="../img/typewriter.jpg">
 		</div>
 		<div class="wrapper">			
 			<header>				
-				<a href="../index.html"><img class="logo" src="../img/bronx-logo.png" alt="Save The Bronx logo">
+				<a href="../index.html"><img class="logo" src="../img/bronx.png" alt="Save The Bronx logo">
 				</a>
 				<nav>
 					<ul>
 						<li><a href="../about/index.html">ABOUT</a></li>
 						<li><a href="../education/index.html">EDUCATE</a></li>
 						<li><a href="../community/index.html">COMMUNITY</a></li>
-						<li><a href="index.html">HELP</a></li>
+						<li><a href="index.html" class="selected">HELP</a></li>
 					</ul>
 				</nav>
 				<a href="http://facebook.com"><img class="facebook" src="../img/facebook.png"></a>
 				<a href="http://twitter.com"><img class="twitter" src="../img/twitter.png"></a>
 			</header>
-			<!-- <div class="pinstrip"></div> -->
-			<div class="statement">
-				<h1>We are funded by caring souls like yourself.  Together we can make a difference!</h1>
+			<article class="top map-div">
+				<h2>Hipster Tracker</h2>
+				<div id="map" height="300px;" width="500px;"></div>
+				<p>If you have seen a hipster in your district please report it!  Together we can overcome!</p>
+			</article>
+			<div class="statement-donate">
+				<img class="paypal" src="../img/paypal.png" alt="Donate now with PayPal" />
+				<h3>We are funded by caring souls like yourself.  Together we can make a difference!</h3>
+				<img class="donate-button" src="../img/donate-button.png" alt="donate now!">
 			</div>
 			<footer>
 				<div class="copywrite">	
-					<p>2015 Save The Bronx &copy</p>
+					2015 Save The Bronx &copy
 				</div>
 			</footer>		
 		</div>		
