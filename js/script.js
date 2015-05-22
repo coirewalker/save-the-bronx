@@ -16,12 +16,14 @@ $(document).ready(function() {
 
 	fadeStatement();
 
+	// function delayStache() {
+	//   $(".stache").delay(2000);
+	// };
 
-	function fadeLearnMore() {
-	  $(".learn-more").hide().delay(9000).fadeIn(1500);
-	};
+	// delayStache();
+ 
 
-	fadeLearnMore();
+
 
 //////////////// GMAP ///////////////
 

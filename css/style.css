@@ -18,6 +18,7 @@ p {
 }
 
 h2 {
+	padding-bottom: 20px;
 	font-size: 1.6em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
@@ -41,24 +42,35 @@ article {
 	padding: 20px 25px;
 	width: 45%;
 	height: 100%;
-	background-color: rgba(000, 000, 000, .6);
+	background-color: rgba(000, 000, 000, .8);
 	border-radius: 5px;
 	border: solid 1px gray;
-	box-shadow: 0px 0px 5px black;
+	/*box-shadow: 0px 0px 5px white;*/
 }
 
-
 article h2 {
-	padding: 0px;
-	font-size: 1.7em;
+	margin: 0;
+	padding-bottom: 20px;
+	font-size: 1.8em;
+	font-style: italic;
 	text-align: center;
-	color: black;
-	background-image: url(../img/h2-bg.jpg);
-	border: solid 1px gray;
+	color: #F5F6CE;
+	/*background-image: url(../img/h2-bg.jpg);*/
+}
+
+.top {
+	margin-top: 160px;
+	padding-top: 20px
 }
 
 .bottom {
 	margin-bottom: 100px;
+	padding-bottom: 20px;
+}
+
+
+article.map-div h2 {
+	padding-top: 0px;
 }
 
 #background {
@@ -270,16 +282,6 @@ nav a:active {
 	color: black;
 }
 
-.top {
-	margin-top: 160px;
-	padding-top: 0px
-}
-
-.bottom {
-	margin-bottom: 100px;
-	padding-bottom: 20px;
-}
-
 
 /*********************************/
 /************* FOOTER ************/
@@ -352,20 +354,39 @@ footer {
 	z-index: 99;
 }
 
-.learn-more {
+.stache {
 	background-image: url(../img/stache.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	position: absolute;
-	width: 150px;
-	height: 75px;
-	top: -2px;
-	left: 90px;
+	height: 55px;
+	width: 160px;
+	top: 19px;
+	left: 80px;
 	z-index: 99;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
 }
 
-.learn-more:hover {
-	opacity: .8;
+.stache:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#stache-bounce 
+  -webkit-animation: bounce .8s; 
+  animation: bounce .8s;
+}
+
+@-webkit-keyframes bounce {
+    0%  {top: -70px;}
+    35% {top: 19px;}
+    50% {top: -20px;}
+    65% {top: 19px;}
+    82% {top: -5px;}
+    85% {top: 19px;}
+    96% {top:  5px;}
+    100% {top: 19px;}
 }
 
 #map {
