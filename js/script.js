@@ -23,7 +23,9 @@ $(document).ready(function() {
 	// delayStache();
  
 
-
+$('.stache-bounce').animate({
+     left: '0'
+ }, 3000);
 
 //////////////// GMAP ///////////////
 
