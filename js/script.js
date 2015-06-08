@@ -15,9 +15,18 @@ $(document).ready(function() {
     $(".donate-bg-fade-delay").hide().delay(10).fadeIn(3500);
 	};
 
-	fadeStatement(); 
+	fadeStatement();
 
+	// function delayStache() {
+	//   $(".stache").delay(2000);
+	// };
 
+	// delayStache();
+ 
+
+// $('.stache-bounce').animate({
+//      left: '0'
+//  }, 3000);
 
   //////////////// GMAP //////////////
 
