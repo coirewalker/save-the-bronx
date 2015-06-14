@@ -190,17 +190,21 @@ nav a:active {
 
 .statement-home {
 	display: inline;
-	background-color: rgba(000, 000, 000, .6);
+/*	background-color: rgba(000, 000, 000, .6);*/
 	position: absolute;
   right: -5px;
   bottom: 80px;
   padding: 0px 15px;
   text-align: right;
-  text-shadow: 0 0 5px black;	
+  text-shadow: 0 0 5px black;
+  /*border-radius: 3px;*/
+ /* box-shadow: 0px 0px 2px rgba(255,255,125, .1);*/	
+
 }
 
 .statement {
 	display: inline;
+	/*	background-color: rgba(000, 000, 000, .4);*/
 	position: absolute;
 	width: 200px;
   right: 0px;
@@ -212,6 +216,18 @@ nav a:active {
 
 
 .statement-home h3, .statement h3, .statement h4 {
+
+/*  border-radius: 3px;	*/
+  text-align: center;
+/*  border-radius: 100px;
+  border: 1px solid gray;*/
+ /* box-shadow: 0px 0px 2px rgba(255,255,125, .1);*/
+}
+
+
+
+.statement-home h3, .statement h3, .statement h4, .statement-donate h3 {
+	/*font-family: 'Ariel', sans-serif; */
 	margin-top: 0;
 	margin-bottom: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -220,15 +236,6 @@ nav a:active {
 	color: black;
 	/*background-color: rgba(fff,fff,fff, .7);*/
 	opacity: 1;
-}
-
-.statement-donate h3 {
-	margin-top: 10px;
-	margin-bottom: 0;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: .7em;
-	color: white;
-	/*text-shadow: 0 0 5px black;*/
 }
 
 .statement h3 {
@@ -253,22 +260,72 @@ nav a:active {
 	color: white;
 }
 
-
-
-/** =============== FOOTER ================ **/
-
-footer {
+.copywrite {
 	width: 100%;
-	height: 30px;
-	margin: 0px;
-	background-image: url(../img/bg.jpg);
-	background-repeat: repeat;
-	border-top: 2px solid black; 
-	box-shadow: 0px 0px 10px;
-	border-bottom: 30px solid #940609;
+	margin-top: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style: italic;
+	font-size: .6em;
+	text-align: center;
+	color: black;
+}
+
+
+
+
+
+
+/** ============ DONATIONS / HELP ===================**/
+
+.statement-donate {
 	position: fixed;
-	bottom: 0px;  
-	z-index: 98;
+	width: 65px;
+	height: 100px;
+	padding: 8px;
+	right: 25px;
+ 	top: 130px;
+	background-color: rgba(000, 000, 000, .7);
+  border: 1px solid gray;
+  border-radius: 5px;	
+}
+
+.statement-donate h3 {
+	padding-bottom: 8px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: .7em;
+	color: white;
+	text-shadow: 0 0 5px black;
+}
+
+input img {
+	width: 100px;
+}
+
+.map-alarm-div, 
+.map-lower-para, 
+.map-lower-para p,
+#googleMaps, 
+article.map-lower-para {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+article.map-lower-para {
+	margin: 0;
+	height: 60%;
+	width: 100%;
+	border: none;
+	background-color: black;
+}
+
+.map-lower-para p {
+	color: white;
+	text-align: center;
+}
+
+.donate-bg-fade-delay {
+	background-color: rgba(255,255,255, .8);
 }
 
 
@@ -309,6 +366,94 @@ footer {
     96% {top: -5px;}
     100% {top: 0px;}
 }
+
+
+
+
+
+/** ======= ALARM PULSE!!!  HIPSTER ALERT!!!! ======== **/
+
+.alarm-box {background-color: #DF013A !important;}
+@-webkit-keyframes colours {
+	0% {color: #000000;}
+	70% {color: #2E2E2E;}
+	94% {color: #DF013A;}
+	99% {color: #2E2E2E;}
+	100% {color: #000000;}
+}
+
+@-moz-keyframes colours {
+  0% {color: #000000;}
+	70% {color: #2E2E2E;}
+	94% {color: #DF013A;}
+	99% {color: #2E2E2E;}
+	100% {color: #000000;}
+}
+
+.alarm-box {
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 750ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: colours;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-direction: normal;
+    -moz-animation-duration: 750ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: colours;
+    -moz-animation-timing-function: ease;
+}
+
+.alarm-bg {background-color: #DF013A !important;}
+@-webkit-keyframes bg-colours {
+	0% {background-color: #000000;}
+	70% {background-color: #2E2E2E;}
+	94% {background-color: #DF013A;}
+	99% {background-color: #2E2E2E;}
+	100% {background-color: #000000;}
+}
+
+@-moz-keyframes bg-colours {
+  0% {background-color: #000000;}
+	70% {background-color: #2E2E2E;}
+	94% {background-color: #DF013A;}
+	99% {background-color: #2E2E2E;}
+	100% {background-color: #000000;}
+}
+
+
+.alarm-bg {
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 750ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: bg-colours;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-direction: normal;
+    -moz-animation-duration: 750ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: bg-colours;
+    -moz-animation-timing-function: ease;
+
+}
+
+
+
+
+/** =============== FOOTER ================ **/
+
+footer {
+	width: 100%;
+	height: 30px;
+	margin: 0px;
+	background-image: url(../img/bg.jpg);
+	background-repeat: repeat;
+	border-top: 2px solid black; 
+	box-shadow: 0px 0px 10px;
+	border-bottom: 30px solid #940609;
+	position: fixed;
+	bottom: 0px;  
+	z-index: 98;
+}
+
 
 
 
@@ -381,21 +526,6 @@ footer {
 	color: white;
 }
 
-.paypal {
-	width: 70px;
-	height: auto;
-	display: inline-block;
-	text-align: center;
-}
-
-.donate-button {
-	width: 100px;
-	height: auto;
-	display: block;
-	margin-top: 10px;
-	text-align: center;
-}
-
 .logo {
 	display: block;
 	margin: 0px auto;
@@ -424,124 +554,6 @@ footer {
 }
 
 
-
-
-/** ============ DONATIONS / HELP ===================**/
-
-.statement-donate {
-	/*display: inline;*/
-	/*background-color: rgba(000, 000, 000, .5);*/
-	position: absolute;
-	width: 70px;
-	height: auto;
-	right: 30px;
-  bottom: 40px;
-/*  border: 1px solid gray;
-  border-radius: 3px;	*/
-  text-align: center;
-}
-
-
-/** Gmaps must have ID 'map'....  **/
-/*#map {
-	margin: 0px auto;
-	height: 375px;
-	width: 100%;
-	border: 2px solid black;
-	box-shadow: 0 0 10px;
-	display: block;
-}*/
-
-.map-alarm-div, 
-.map-lower-para, 
-.map-lower-para p,
-#googleMaps, 
-article.map-lower-para {
-	padding-right: 0;
-	margin-right: 0;
-}
-
-
-article.map-lower-para {
-	margin: 0;
-	height: 50%;
-	width: 100%;
-	border: none;
-	background-color: black;
-}
-
-.map-lower-para p {
-	color: white;
-	text-align: center;
-}
-
-.donate-bg-fade-delay {
-	background-color: rgba(255,255,255, .8);
-}
-
-/** ======= ALARM PULSE!!!  HIPSTER ALERT!!!! ======== **/
-
-.alarm-box {background-color: #DF013A !important;}
-@-webkit-keyframes colours {
-	0% {color: #000000;}
-	70% {color: #2E2E2E;}
-	94% {color: #DF013A;}
-	99% {color: #2E2E2E;}
-	100% {color: #000000;}
-}
-
-@-moz-keyframes colours {
-  0% {color: #000000;}
-	70% {color: #2E2E2E;}
-	94% {color: #DF013A;}
-	99% {color: #2E2E2E;}
-	100% {color: #000000;}
-}
-
-.alarm-box {
-    -webkit-animation-direction: normal;
-    -webkit-animation-duration: 750ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: colours;
-    -webkit-animation-timing-function: ease;
-    -moz-animation-direction: normal;
-    -moz-animation-duration: 750ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-name: colours;
-    -moz-animation-timing-function: ease;
-}
-
-.alarm-bg {background-color: #DF013A !important;}
-@-webkit-keyframes bg-colours {
-	0% {background-color: #000000;}
-	70% {background-color: #2E2E2E;}
-	94% {background-color: #DF013A;}
-	99% {background-color: #2E2E2E;}
-	100% {background-color: #000000;}
-}
-
-@-moz-keyframes bg-colours {
-  0% {background-color: #000000;}
-	70% {background-color: #2E2E2E;}
-	94% {background-color: #DF013A;}
-	99% {background-color: #2E2E2E;}
-	100% {background-color: #000000;}
-}
-
-
-.alarm-bg {
-    -webkit-animation-direction: normal;
-    -webkit-animation-duration: 750ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: bg-colours;
-    -webkit-animation-timing-function: ease;
-    -moz-animation-direction: normal;
-    -moz-animation-duration: 750ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-name: bg-colours;
-    -moz-animation-timing-function: ease;
-
-}
 
 /** ========= Media Queries ============**/
 

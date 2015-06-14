@@ -15,9 +15,18 @@ $(document).ready(function() {
     $(".donate-bg-fade-delay").hide().delay(10).fadeIn(3500);
 	};
 
-	fadeStatement(); 
+	fadeStatement();
 
+	// function delayStache() {
+	//   $(".stache").delay(2000);
+	// };
 
+	// delayStache();
+ 
+
+// $('.stache-bounce').animate({
+//      left: '0'
+//  }, 3000);
 
   //////////////// GMAP //////////////
 
@@ -30,7 +39,8 @@ $(document).ready(function() {
     var mapProp = {
       center:myCenter,
       zoom:13,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
+      mapTypeId:google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"all","elementType":"all","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":-30}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#353535"}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.province","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.neighborhood","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#656565"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#505050"}]},{"featureType":"poi","elementType":"geometry.stroke","stylers":[{"color":"#808080"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#454545"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"hue":"#000000"},{"saturation":100},{"lightness":-40},{"invert_lightness":true},{"gamma":1.5},{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]}]
     };
 
     map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
