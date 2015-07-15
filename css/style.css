@@ -127,7 +127,6 @@ article.map-div h2 {
 
 
 /** ================ HEADER ================= **/
-
 header {
 	width: 100%;
 	height: 70px;
@@ -187,24 +186,18 @@ nav a:active {
 
 
 /** ================= BODY ================== **/
-
 .statement-home {
 	display: inline;
-/*	background-color: rgba(000, 000, 000, .6);*/
 	position: absolute;
   right: -5px;
   bottom: 80px;
   padding: 0px 15px;
   text-align: right;
   text-shadow: 0 0 5px black;
-  /*border-radius: 3px;*/
- /* box-shadow: 0px 0px 2px rgba(255,255,125, .1);*/	
-
 }
 
 .statement {
 	display: inline;
-	/*	background-color: rgba(000, 000, 000, .4);*/
 	position: absolute;
 	width: 200px;
   right: 0px;
@@ -214,27 +207,17 @@ nav a:active {
   text-align: center;
 }
 
-
 .statement-home h3, .statement h3, .statement h4 {
-
-/*  border-radius: 3px;	*/
   text-align: center;
-/*  border-radius: 100px;
-  border: 1px solid gray;*/
- /* box-shadow: 0px 0px 2px rgba(255,255,125, .1);*/
 }
 
-
-
 .statement-home h3, .statement h3, .statement h4, .statement-donate h3 {
-	/*font-family: 'Ariel', sans-serif; */
 	margin-top: 0;
 	margin-bottom: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.2em;
 	line-height: 1.2em;
 	color: black;
-	/*background-color: rgba(fff,fff,fff, .7);*/
 	opacity: 1;
 }
 
@@ -273,10 +256,7 @@ nav a:active {
 
 
 
-
-
 /** ============ DONATIONS / HELP ===================**/
-
 .statement-donate {
 	position: fixed;
 	width: 65px;
@@ -331,9 +311,7 @@ article.map-lower-para {
 
 
 
-
 /** =========== BOUNCE ANIMATIONS ============== **/
-
 #footerbounce {
 	-webkit-animation: footerbounce 1.3s;
   animation: footerbounce 1.3s;
@@ -351,7 +329,8 @@ article.map-lower-para {
 }
 
 #headerbounce {
-	 -webkit-animation: headerbounce 1.3s; /* Chrome, Safari, Opera */ 
+	 /* Chrome, Safari, Opera */ 
+	 -webkit-animation: headerbounce 1.3s;
   animation: headerbounce 1.3s;
 }
 
@@ -370,9 +349,7 @@ article.map-lower-para {
 
 
 
-
 /** ======= ALARM PULSE!!!  HIPSTER ALERT!!!! ======== **/
-
 .alarm-box {background-color: #DF013A !important;}
 @-webkit-keyframes colours {
 	0% {color: #000000;}
@@ -420,7 +397,6 @@ article.map-lower-para {
 	100% {background-color: #000000;}
 }
 
-
 .alarm-bg {
     -webkit-animation-direction: normal;
     -webkit-animation-duration: 750ms;
@@ -432,14 +408,12 @@ article.map-lower-para {
     -moz-animation-iteration-count: infinite;
     -moz-animation-name: bg-colours;
     -moz-animation-timing-function: ease;
-
 }
 
 
 
 
 /** =============== FOOTER ================ **/
-
 footer {
 	width: 100%;
 	height: 30px;
@@ -458,9 +432,7 @@ footer {
 
 
 
-
 /** ============== BUTTONS ==================== **/
-
 .copywrite {
 	width: 100%;
 	margin-top: 10px;
@@ -556,7 +528,6 @@ footer {
 
 
 /** ========= Media Queries ============**/
-
 @media all and (max-width: 1084px) {
 	
 	.logo {
@@ -566,7 +537,6 @@ footer {
 		margin: 0px auto;
 		padding-top: 27px;
 	}
-
 	.stache {
 		height: 40px;
 		width: 90px;
@@ -588,24 +558,20 @@ footer {
 		height: 35px;
 		width: 75px;
 		top: 37px;
-	}
-	 
+	} 
 	nav {
 		height: 34px;
 	}
-
 	nav ul {
 		display: block;
 		text-align: center;
 	}
-
 	nav li {
 		font-family: 'Slabo 13px', serif;
 		font-size: 1.2em;
 		display: inline-block;
 		padding-right: 20px;
 	} 
-
 }
 
 @media all and (max-width: 780px) {
@@ -615,21 +581,17 @@ footer {
 		height: auto;
 		padding-top: 39px;
 	}
-
 	.stache {
 		height: 30px;
 		width: 62px;
 		top: 42px;
 	}
-
 	nav {
 		height: 30px;
 	}
-
 	nav ul {
 		display: block;
 	}
-
 	nav li {
 		font-family: 'Slabo 13px', serif;
 		font-size: 1em;
@@ -645,21 +607,17 @@ footer {
 		height: auto;
 		padding-top: 42px;
 	}
-
 	.stache {
 		height: 28px;
 		width: 55px;
 		top: 45px;
 	}
-
 	nav {
 		height: 29px;
 	}
-
 	nav ul {
 		display: block;
 	}
-
 	nav li {
 		font-family: 'Slabo 13px', serif;
 		font-size: .9em;
@@ -710,15 +668,12 @@ footer {
 		display: block;
 		padding-top: 47px;
 	}
-
 	.stache {
 		height: 25px;
 		width: 50px;
 		top: -224px;
 		left: 345px;
-	}
-
-	
+	}	
 }
 
 
