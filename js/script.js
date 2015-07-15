@@ -17,23 +17,12 @@ $(document).ready(function() {
 
 	fadeStatement();
 
-	// function delayStache() {
-	//   $(".stache").delay(2000);
-	// };
 
-	// delayStache();
- 
-
-// $('.stache-bounce').animate({
-//      left: '0'
-//  }, 3000);
 
   //////////////// GMAP //////////////
 
-
-
   var map
-  var myCenter=new google.maps.LatLng(40.8447819,-73.8648268);
+  var myCenter = new google.maps.LatLng(40.8447819,-73.8648268);
 
   function initialize() {
     var mapProp = {
