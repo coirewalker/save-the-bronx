@@ -1,0 +1,42 @@
+.statement-donate {
+	position: fixed;
+	width: 65px;
+	height: 85px;
+	padding: 8px;
+	right: 25px;
+ 	top: 130px;
+	background-color: rgba(000, 000, 000, .7);
+  border: 1px solid gray;
+  border-radius: 5px;	
+}
+
+.statement-donate h3 {
+	padding-bottom: 8px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: .5em;
+	color: white;
+}
+
+input img {
+	width: 100px;
+}
+
+.map-lower-para {
+	margin: 0;
+	padding: 25px;
+	height: 60%;
+	width: 100%;
+	border: none;
+	background-color: black;
+}
+
+.map-lower-para p {
+	color: white;
+	text-align: center;
+}
+
+.donate-bg-fade-delay {
+	background-color: rgba(255,255,255, .8);
+}
+
