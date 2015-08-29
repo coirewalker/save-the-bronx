@@ -1,0 +1,133 @@
+#footerbounce {
+	-webkit-animation: footerbounce 1.3s;
+  animation: footerbounce 1.3s;
+}
+
+@-webkit-keyframes footerbounce {
+  0%  {bottom: -100px;}
+  50% {bottom: 0px;}
+  65% {bottom: -45px;}
+  75% {bottom: 0px;}
+  85% {bottom: -30px;}
+  90% {bottom: 0px;}
+  95% {bottom: -10px;}
+  100% {bottom: 0px;}
+}
+
+#headerbounce {
+  /* Chrome, Safari, Opera */ 
+  -webkit-animation: headerbounce 1.3s;
+  animation: headerbounce 1.3s;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes headerbounce {
+  0%   {top: -150px;}
+  50%  {top: 0px;}
+  65% {top: -70px;}
+  75% {top: 0px;}
+  85% {top: -15px;}
+  90% {top: 0px;}
+  96% {top: -5px;}
+  100% {top: 0px;}
+}
+
+/** ======= ALARM PULSE!!!  HIPSTER ALERT!!!! ======== **/
+.alarm-box {background-color: #DF013A !important;}
+@-webkit-keyframes colours {
+	0% {color: #000000;}
+	70% {color: #2E2E2E;}
+	94% {color: #DF013A;}
+	99% {color: #2E2E2E;}
+	100% {color: #000000;}
+}
+
+@-moz-keyframes colours {
+  0% {color: #000000;}
+	70% {color: #2E2E2E;}
+	94% {color: #DF013A;}
+	99% {color: #2E2E2E;}
+	100% {color: #000000;}
+}
+
+.alarm-box {
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 750ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: colours;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-direction: normal;
+  -moz-animation-duration: 750ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: colours;
+  -moz-animation-timing-function: ease;
+}
+
+.alarm-bg {background-color: #DF013A !important;}
+@-webkit-keyframes bg-colours {
+	0% {background-color: #000000;}
+	70% {background-color: #2E2E2E;}
+	94% {background-color: #DF013A;}
+	99% {background-color: #2E2E2E;}
+	100% {background-color: #000000;}
+}
+
+@-moz-keyframes bg-colours {
+  0% {background-color: #000000;}
+	70% {background-color: #2E2E2E;}
+	94% {background-color: #DF013A;}
+	99% {background-color: #2E2E2E;}
+	100% {background-color: #000000;}
+}
+
+.alarm-bg {
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 750ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: bg-colours;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-direction: normal;
+  -moz-animation-duration: 750ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: bg-colours;
+  -moz-animation-timing-function: ease;
+}
+
+
+#background {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;  
+  margin: auto;
+  width: 50%;
+  min-height: 50%;
+  opacity:0;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; }}
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; }}
+
+/** background zoom **/
+.animate {
+  -webkit-transition: all 750ms esase-out;
+  transition: all 750ms ease-out;
+}
+
+.zoom {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+

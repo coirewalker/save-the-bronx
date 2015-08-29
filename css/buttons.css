@@ -1,0 +1,93 @@
+.copywrite {
+	width: 100%;
+	margin-top: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style: italic;
+	font-size: .6em;
+	text-align: center;
+	color: black;
+}
+
+.facebook {
+	background-image: url(../img/facebook.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	bottom: 0px;
+	right: 70px;
+	z-index: 99;
+}
+
+.facebook:hover {
+	background-image: url(../img/facebook-hover.png);
+	-webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+-webkit-transition: all 1000ms ease-in;
+  -moz-transition: all 1000ms ease-in;
+  -ms-transition: all 1000ms ease-in;
+  -o-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;	
+}
+
+.facebook a:active {
+	color: white;
+}
+
+.twitter {
+	background-image: url(../img/twitter.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 0px;
+	right: 25px;
+	height: 28px;
+	width: 28px;
+}
+
+.twitter:hover {
+	background-image: url(../img/twitter-hover.png);
+	-webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+-webkit-transition: all 1000ms ease-in;
+  -moz-transition: all 1000ms ease-in;
+  -ms-transition: all 1000ms ease-in;
+  -o-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;	
+}
+
+.twitter a:active {
+	color: white;
+}
+
+.logo {
+	display: block;
+	margin: 0px auto;
+	padding-top: 18px;
+	height: 55px;
+	z-index: 99;
+}
+
+.stache {
+	background-image: url(../img/stache.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	height: 48px;
+	width: 130px;
+	top: 25px;
+	right: 30px;
+	z-index: 99;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+.stache:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+

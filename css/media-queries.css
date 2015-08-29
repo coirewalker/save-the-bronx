@@ -1,0 +1,170 @@
+@media all and (max-width: 1064px) {
+	.logo {
+		width: 650px;
+		height: auto;
+		display: block;
+		margin: 0px auto;
+		padding-top: 27px;
+	}
+	.stache {
+		height: 40px;
+		width: 90px;
+		top: 33px;
+		right: 30px;
+	}
+}
+
+@media all and (max-width: 980px) {
+	.logo{
+		width: 550px;
+		height: auto;
+		display: block;
+		margin: 0px auto;
+		padding-top: 34px;
+	}
+	.stache {
+		height: 35px;
+		width: 75px;
+		top: 37px;
+	} 
+	nav {
+		height: 34px;
+	}
+	nav ul {
+		display: block;
+		text-align: center;
+	}
+	nav li {
+		font-family: 'Slabo 13px', serif;
+		font-size: 1.2em;
+		display: inline-block;
+		padding-right: 20px;
+	} 
+}
+
+@media all and (max-width: 900px) {
+	.statement {
+    width: 140px;
+    margin-right: 10px;
+	}
+}
+
+@media all and (max-width: 780px) {
+	.logo {
+		width: 480px;
+		height: auto;
+		padding-top: 39px;
+	}
+	.statement {
+    width: 100px;
+	}
+	.statement h3, .statement h4 {
+		font-size: 1em;
+	}
+	.stache {
+		height: 30px;
+		width: 62px;
+		top: 42px;
+	}
+	nav {
+		height: 30px;
+	}
+	nav ul {
+		display: block;
+	}
+	nav li {
+		font-family: 'Slabo 13px', serif;
+		font-size: 1em;
+		display: inline-block;
+		padding-right: 20px;
+	}
+}
+
+@media all and (max-width: 680px) {
+	.logo {
+		width: 430px;
+		height: auto;
+		padding-top: 42px;
+	}
+	.stache {
+		height: 28px;
+		width: 55px;
+		top: 45px;
+	}
+	nav {
+		height: 29px;
+	}
+	nav ul {
+		display: block;
+	}
+	nav li {
+		font-family: 'Slabo 13px', serif;
+		font-size: .9em;
+		display: inline-block;
+		padding-right: 20px;
+	}
+}
+
+@media all and (max-width: 548px) {
+	.logo {
+		width: 370px;
+		height: auto;
+		display: block;
+		padding-top: 47px;
+	}
+	.statement h3, .statement h4 {
+		display: none;
+	}
+	.stache {
+		height: 25px;
+		width: 50px;
+		top: -224px;
+		left: 345px;
+	}	
+}
+
+/* mobile menu */
+
+@media all and (max-width: 390px) {
+	.bg-img {
+		display: none;
+	}
+	.logo {
+		display: none;
+	}
+	.logo-mobile {
+		display: block;
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+		margin-bottom: -4px;
+		padding-top: 45px;
+		padding-left: 10px;
+	}
+
+	.mobile-message {
+		display: block;
+		padding: 70px 50px;
+		text-align: center;
+	}
+
+	.mobile-message p {
+		font-size: 1.3em;
+		color: #000;
+		text-shadow: 0px 0px 10px #fff;
+	}
+
+	.header-home {
+		width: 100%;
+		height: 90vh;
+		border-bottom: 4px solid #940609; 	
+	}
+	nav {
+		display: none;
+	}
+	footer {
+		border-top: solid 15px #000;
+		z-index: 9999;
+		box-shadow: none;
+ 	}
+}

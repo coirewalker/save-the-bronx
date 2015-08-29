@@ -2,19 +2,32 @@
 <html>
 	<head>
 		<title>// Save The Bronx Home //</title>
-		<link rel="stylesheet" href="../css/style.css">
+	
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/animations.css">
+		<link rel="stylesheet" href="../css/buttons.css">
+		<link rel="stylesheet" href="../css/donations.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/media-queries.css">
+
 		<script type="text/javascript" src="../js/jquery-2.3.1.js"></script>
 		<script type="text/javascript" src="../js/script.js"></script>
  		<script src="../js/gmaps.min.js"></script>
  		<script src="https://maps.googleapis.com/maps/api/js"></script>
+
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,300italic|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<link href="http://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet" type="text/css">
 	</head>
+
 	<body>
+
 		<div id="background">
 			<img class="bg-img donate-bg-fade-delay" src="../img/hipster-gear-2.jpg">
 		</div>
-		<div class="wrapper">		
+
+		<div class="wrapper">
+
 			<header>				
 				<a href="../index.html"><img class="logo" src="../img/bronx.png" alt="Save The Bronx logo">
 				</a>
@@ -27,9 +40,13 @@
 					</ul>
 				</nav>
 			</header>
+
 			<div class="map-container">
-				<div class="map-alarm-div"><div id="googleMap" style="height:600px; width:105%;"></div></div>	
-				<div class="statement-donate">
+				<div class="map-alarm-div">
+					<div id="googleMap" style="height:600px; width:105%;"></div>
+				</div>	
+
+				<div class="statement-donate-wrapper">
 					<form class="statement-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<h3>We are funded by caring souls like yourself.  Together we can make a difference!</h3>
 						<input type="hidden" name="cmd" value="_s-xclick">
@@ -37,13 +54,17 @@
 						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" width="65px" height="25px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
 					</form>						
-				</div>
+				</div><!-- /.statement-donate-wrapper -->
+
 				<div class="map-lower">
 					<article class="map-lower-para" ><p>
 						If you have seen a hipster in your district please report it above!  We will dispatch HSWAT (Hipster S.W.A.T.) immediately!</p>
 					</article>
 				</div><!-- end map lower -->
+
 			</div><!-- end map-container -->
-		</div> <!-- end wrapper -->		
+
+		</div> <!-- end wrapper -->	
+
 	</body>
 </html>
